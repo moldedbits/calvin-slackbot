@@ -7,5 +7,6 @@ module.exports = (robot) ->
     data = "url=#{url}"
     robot.http(PUBLISH_URL)
       .post(data) (err, result, body) ->
-        res.send "Added to the TV queue: #{url}"
+        #success
+        #res.send "Added to the TV queue: #{url}"
     )
